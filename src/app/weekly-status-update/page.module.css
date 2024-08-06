@@ -1,0 +1,98 @@
+/* page.module.css */
+
+
+.main1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem;
+  min-height: 100vh;
+  background: var(--secondary-color);
+}
+
+.main2{
+  display: flex;
+  flex-direction: column;
+  padding-right: 20px;
+  border-right: solid black 1px;
+}
+
+.main3{
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+}
+
+.button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  margin: 1rem 0;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+}
+
+.unavailable {
+  background-color: gray;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  margin: 1rem 0;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+}
+
+.unavailable:hover{
+  background-color: gray;
+  cursor:default;
+}
+
+.loading {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.errorMessage {
+  background-color: #d9534f;
+  color: white;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: var(--border-radius);
+  text-align: center;
+  width: 100%;
+}
+
+.successMessage {
+  background-color: #5cb85c;
+  color: white;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: var(--border-radius);
+  text-align: center;
+  width: 100%;
+}
+
+.card {
+  background-color: rgba(var(--tile-start-rgb), 0.8);
+  padding: 1.5rem;
+  margin: 1rem 0;
+  border-radius: var(--border-radius);
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  margin: 0 0 0.5rem;
+}
+
+.card p {
+  margin: 0.5rem 0;
+}
+
+.card small {
+  color: #666;
+}
