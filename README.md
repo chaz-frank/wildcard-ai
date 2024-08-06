@@ -1,8 +1,7 @@
 # wildcard-ai
 
-![AwesomeProject Logo](https://via.placeholder.com/150)
-
-A brief description of what AwesomeProject does and its main features.
+**TO DO
+A brief description of wildcard-ai and it's features.
 
 ## Table of Contents
 
