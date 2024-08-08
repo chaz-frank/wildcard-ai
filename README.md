@@ -1,7 +1,6 @@
 # wildcard-ai
 
-**TO DO
-A brief description of wildcard-ai and it's features.
+Wildcard-AI is a project designed to integrate AI capabilities with Notion, allowing users to grab notes and summaries from meetings and automatically posting them to a Notion database. It also allows users to create a draft of a weekly status update based on the notes and summaries from the meetings of the past week.
 
 ## Table of Contents
 
@@ -40,6 +39,8 @@ A brief description of wildcard-ai and it's features.
     4. Navigate back to terminal and add api key to .env file. Don't include the "".
         ```bash
         echo NOTION_KEY="API KEY HERE" > .env
+    ### More Info
+    For more info on creating an integration, go to https://developers.notion.com/docs/create-a-notion-integration
 
 8. Create a page in your notion workspace and grab the id. Quickest way is to grab the url and find the id in it.
     - Example:
@@ -56,10 +57,33 @@ A brief description of wildcard-ai and it's features.
 10. Add openai api key to .env file. Don't include the "".
     ```bash
     echo OPENAI_API_KEY="API KEY HERE" > .env
+    ```
+    ### Alternatives
+    If you don't feel comfortable using terminal to input the text for the .env file, you can simply open the file in a text editor and put the api key's into it in this format:
+    ```bash
+    NOTION_KEY=xxxxxxx
+    NOTION_PAGE_ID=xxxxxx
+    OPENAI_API_KEY=xxxxxx
+
+11. Go to file --> save all
+
 
 ## Usage
-- Navigate to terminal and open the root file of the project. If you just finished installation, then you're already in the root file.
+
+### Meeting Notes
+1. Navigate to terminal and open the root file of the project. If you just finished installation, then you're already in the root file.
 ```bash
 npx next dev
 ```
-- Go to your preferred web browser (Chrome is the best one) and go to localhost:3000.
+2. Go to your preferred web browser (Chrome is recommended) and go to localhost:3000.
+
+3. Copy and paste the transcript and meeting title.
+
+4. Press submit!
+
+### Weekly Status Update
+1. Press weekly status update button in the nav bar.
+
+2. Press compile notes and wait until the notes appear.
+
+3. Press create draft and wait for draft to appear.
