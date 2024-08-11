@@ -35,35 +35,29 @@ Wildcard-AI is a project designed to integrate AI capabilities with Notion, allo
     1. Click + New integration.
     2. Enter the integration name and select the newly created workspace for the new integration.
     3. Get your API secret
-        API requests require an API secret to be successfully authenticated. Visit the Configuration tab to get your integration’s API secret (or “Internal Integration Secret”).
+        - API requests require an API secret to be successfully authenticated. Visit the Configuration tab to get your integration’s API secret (or “Internal Integration Secret”).
     4. Navigate back to terminal and add api key to .env file. Don't include the "".
         ```bash
-        echo NOTION_KEY="API KEY HERE" > .env
+        echo NOTION_KEY="API KEY HERE" >> .env
+
     ### More Info
     For more info on creating an integration, go to https://developers.notion.com/docs/create-a-notion-integration
 
 8. Create a page in your notion workspace and grab the id. Quickest way is to grab the url and find the id in it.
     - Example:
-        https://www.notion.so/378ea15987e241889b919db8c9b52efa?v=017216ad91d842e
-        The id is everything after the last slash, so this one is 378ea15987e241889b919db8c9b52efa?v=017216ad91d842e
+        - https://www.notion.so/378ea15987e241889b919db8c9b52efa?v=017216ad91d842e
+        - The id is everything after the last slash, so this one is 378ea15987e241889b919db8c9b52efa?v=017216ad91d842e
 
 9. Add page id to .env file. Don't include the "".
     ```bash
-    echo NOTION_PAGE_ID="PAGE ID HERE" > .env
+    echo NOTION_PAGE_ID="PAGE ID HERE" >> .env
 
 
 9. Get an openai api key and load some credits for testing.
 
 10. Add openai api key to .env file. Don't include the "".
     ```bash
-    echo OPENAI_API_KEY="API KEY HERE" > .env
-    ```
-    ### Alternatives
-    If you don't feel comfortable using terminal to input the text for the .env file, you can simply open the file in a text editor and put the api key's into it in this format:
-    ```bash
-    NOTION_KEY=xxxxxxx
-    NOTION_PAGE_ID=xxxxxx
-    OPENAI_API_KEY=xxxxxx
+    echo OPENAI_API_KEY="API KEY HERE" >> .env
 
 11. Go to file --> save all
 
@@ -72,9 +66,9 @@ Wildcard-AI is a project designed to integrate AI capabilities with Notion, allo
 
 ### Meeting Notes
 1. Navigate to terminal and open the root file of the project. If you just finished installation, then you're already in the root file.
-```bash
-npx next dev
-```
+    ```bash
+    npx next dev
+
 2. Go to your preferred web browser (Chrome is recommended) and go to localhost:3000.
 
 3. Copy and paste the transcript and meeting title.
