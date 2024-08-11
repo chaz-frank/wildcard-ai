@@ -54,6 +54,7 @@ Wildcard-AI is a project designed to integrate AI capabilities with Notion, allo
 
 
 9. Get an openai api key and load some credits for testing.
+- https://platform.openai.com/settings/profile?tab=api-keys
 
 10. Add openai api key to .env file. Don't include the "".
     ```bash
